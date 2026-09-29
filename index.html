@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+  <meta name="theme-color" content="#6c5ce7">
+  <meta name="description" content="給老師的一份溫暖教師節祝福 PWA">
+  <link rel="manifest" href="manifest.json">
+  <link rel="icon" href="icons/icon-192.png">
+  <link rel="apple-touch-icon" href="icons/icon-192.png">
+  <link rel="stylesheet" href="style.css">
+  <title>教師節祝福</title>
+</head>
+<body>
+  <main class="app-shell">
+    <header class="hero">
+      <div class="badge">PWA APP</div>
+      <h1>教師節祝福 💜</h1>
+      <p>謝謝老師，把知識、耐心與鼓勵帶進我們的每一天。</p>
+    </header>
+
+    <section class="card message-card">
+      <div class="flower">🌷</div>
+      <h2>給最辛苦的老師</h2>
+      <p id="message">老師，謝謝您的用心教導。因為有您的陪伴，我們一步一步變得更勇敢、更有自信。</p>
+      <button id="changeMessage" type="button">換一則祝福</button>
+    </section>
+
+    <section class="card">
+      <h2>寫下你的感謝</h2>
+      <textarea id="note" maxlength="120" placeholder="例如：老師謝謝您每天耐心教我！"></textarea>
+      <div class="row">
+        <span id="count">0 / 120</span>
+        <button id="saveNote" type="button">儲存祝福</button>
+      </div>
+      <p id="saved" class="saved" aria-live="polite"></p>
+    </section>
+
+    <footer>離線也能開啟 · 可加入手機主畫面</footer>
+  </main>
+  <script src="app.js"></script>
+</body>
+</html>
